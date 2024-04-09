@@ -14,7 +14,7 @@ from pathlib import Path
 import os
 
 if os.path.exists('env.py'):
-    import
+    import env
 
 CLOUDINARY_STORAGE = {
     'CLOUDINARY_URL': os.environ.get('CLOUDINARY_URL')
@@ -34,7 +34,7 @@ SECRET_KEY = 'django-insecure-2b4*1(tk!pmc9lbw9q%h0#0a#f4xp8zpl0go)-s5&1x+n59=9l
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [ '8000-maduj-allauctionsdrf-h9t5zeqlxsf.ws-eu110.gitpod.io']
 
 
 # Application definition
@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
+    'user_accounts',
 ]
 
 MIDDLEWARE = [
